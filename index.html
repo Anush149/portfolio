@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anush P - Portfolio</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, a, form, input, textarea {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #181818;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header nav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+        }
+
+        /* About Section */
+        #about {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Skills Section */
+        #skills {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #skills h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .skill {
+            display: inline-block;
+            width: 300px;
+            background-color: #333;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .skill p {
+            font-size: 1rem;
+            color: #b3b3b3;
+        }
+
+        /* Projects Section */
+        #projects {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .project {
+            display: inline-block;
+            background-color: #333;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1rem;
+            color: #b3b3b3;
+            margin-bottom: 10px;
+        }
+
+        .project a {
+            color: #ff0000;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Contact Section */
+        #contact {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #333;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        form label {
+            display: block;
+            font-size: 1.1rem;
+            color: #f1f1f1;
+            margin-bottom: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #444;
+            border: 1px solid #555;
+            border-radius: 5px;
+            color: #f1f1f1;
+        }
+
+        form input[type="submit"] {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #e60000;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #222;
+            color: #777;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ff0000;
+        }
+
+        footer a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav {
+                margin-top: 10px;
+            }
+
+            .skill, .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Anush P</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Anush P, a passionate C++ developer specializing in embedded systems. I enjoy solving complex problems, building optimized software, and bringing hardware to life through code. My expertise includes embedded systems, microcontroller programming, and low-level optimizations.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>C++ Development</h3>
+                <p>Expert in C++ programming for system-level applications,expert in Ethical Hacking and embedded systems.</p>
+            </div>
+            <div class="skill">
+                <h3>Embedded Systems</h3>
+                <p>Experienced in designing and developing embedded systems with microcontrollers and RTOS.</p>
+            </div>
+            <div class="skill">
+                <h3>Ethical Hacker</h3>
+                <p>Skilled in integrating embedded systems with hardware components to optimize performance.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Smart Home Automation</h3>
+                <p>Developed an embedded system for smart home automation, controlling lighting, temperature, and security systems.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Real-Time Robotics Control</h3>
+                <p>Built a real-time control system for a robotic arm, integrating sensors and motors for precise control.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Anush P | <a href="https://www.linkedin.com/in/anush-p">LinkedIn</a> | <a href="https://github.com/anush-p">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
